@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html>
+<head>
+		<meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta property="og:title" content="홍가은- 프로필">
+    <meta property="og:description" content="나의 것을 찾아가는 과정 속 기록들">
+    <meta property="og:image" content="홍가은.JPEG">
+    <script type="text/javascript" src="https://s3.ap-northeast-2.amazonaws.com/materials.spartacodingclub.kr/free/sparta.js"></script>
+    <title>홍가은 - 프로필</title>
+    <style>
+       @import url('https://fonts.googleapis.com/css2?family=Courgette&display=swap');
+        * {
+            font-family: 'Courgette', cursive;
+        }
+        body{
+            background: linear-gradient(pink, white);
+        }
+        .profile{
+            width: 200px;
+            height: 200px;
+
+
+            border-radius: 100%;
+
+            border: 2px solid white;
+
+            background-image: url("홍가은.JPEG");
+            background-position: center;
+            background-size: cover;
+
+        }
+        .main{
+            color: white;
+            font-size: 28px;
+            margin-top: 30px;
+            margin-bottom: 10px;
+        }
+        .sub{
+            color: gray;
+            font-size: 18px;
+
+            margin-top: 0px;
+            margin-bottom: 30px;
+        }
+        
+        .wrap{
+            
+            width: 300px;
+            margin: 30px auto 0px auto;
+
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        .wrap> a:hover { 
+            background: hsl(278, 70%, 82%);
+        }
+
+
+        .insta{
+            width:130px;
+            height: 130px;
+            
+            background-color: cornsilk;
+            border-radius: 40px;
+            z-index:auto;
+            font-size: 16px;
+            text-align: center;
+            
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+
+            text-decoration: none;
+            margin-bottom: 70px;
+
+
+            color: black;
+        }
+
+        
+
+        a.blog {
+           position:relative;
+           width: 90px;
+           height: 90px;
+           margin-bottom: 40px;
+           background-color: rgb(235, 88, 88);
+           
+           transform: rotate();
+
+           display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            font-size: 17px;
+            text-align: center;
+            color: black;
+            
+           
+            text-decoration: none;
+            
+        }
+        a.blog:before,
+
+        a.blog:after{
+            content: "";
+            z-index: -2;
+            
+            width: 90px;
+            height: 90px;
+            position: absolute;
+            border-radius: 50%;
+            background: rgb(235, 88, 88);
+        
+        }
+
+        a.blog:before{
+            left: -50%;
+        }
+        a.blog::after{
+            top: -50px;
+            
+        }
+        
+        a.blog:hover:before{
+            background-color: hsl(278, 70%, 82%);
+        }
+        a.blog:hover:after{
+            background-color: hsl(278, 70%, 82%);
+        }
+
+        
+
+       
+
+       .notion {
+           width: 120px;
+           height: 82px;
+           box-sizing: content-box;
+           padding-top: 16px;
+           position: relative;
+           background-color: skyblue;
+           color: black;
+           font-size: 15px;
+           letter-spacing: 0.2em;
+           text-align: center;
+           
+           text-decoration: none;
+
+       }
+       .notion:after {
+           content: "";
+           position: absolute;
+           left: 0;
+           bottom: 0;
+           width: 0;
+           height: 0;
+           border-bottom: 24px solid #f2f2f2;
+           border-left: 60px solid transparent;
+           border-right: 60px solid transparent;
+       }
+
+
+
+        
+
+
+
+    </style>
+</head>
+<body>
+    <div class="wrap">
+        <div class="profile" img src="./sparta./홍가은.JPEG"></div>
+        <h1 class="main">Hong Gaeun</h1>
+        <p class="sub"> "Hellow! Welcome to my world"</p>
+        <a target ="_blank" class="insta" href="https://www.instagram.com/supsilver_/">Follow my Instagram</a>
+        <a target="_blank"class="blog" href="https://blog.naver.com/gaeun8672">Read my Blog</a>
+        <a target="_blank" class="notion" href="https://maple-whale-46c.notion.site/Leah-4abd2cfb936b47348a8c8cde0cf9a3a7">Visit my Notion</a>
+        <a target="_blank" href="https://ddingdong.spartacodingclub.kr/"></a>
+            </div>
+    
+</body>
+</html>
